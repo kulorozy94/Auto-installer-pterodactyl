@@ -57,16 +57,16 @@ install_jq() {
 #Check user token
 check_token() {
   echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY ZERONE OFFC             [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${RED}[+] =============================================== [+]${NC}"
+  echo -e "${RED}[+]               LICENSY AKAS STORE OFFC             [+]${NC}"
+  echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   TOKEN=$(jq -r '.token' token.json)
 
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "zerone" ]; then
+  if [ "$USER_TOKEN" = "akasstore" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN}AKSES GAGAL${NC}"
